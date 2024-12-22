@@ -6,39 +6,157 @@
   <title>Evening Networking</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4a90e2, #6bb0f5);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      background: #f8f9fa;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      color: #4a90e2;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: #4a90e2;
+      color: white;
+    }
+
+    .container {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      color: #4a90e2;
+      margin-bottom: 20px;
+    }
+
+    .pictograms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .pictogram {
+      text-align: center;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .pictogram:hover {
+      transform: translateY(-5px);
+    }
+
+    .pictogram img {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #4a90e2;
+      color: white;
+      margin-top: 50px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      background: #4a90e2;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-buttons a:hover {
+      background: #357ab8;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Evening Networking</h1>
     <p>Boost your connections, elevate your impact</p>
+    <div class="cta-buttons">
+      <a href="#signup">S'inscrire maintenant</a>
+      <a href="#contact">Contactez-nous</a>
+    </div>
   </header>
 
   <nav>
-    <a href="#home" class="smooth-transition">Accueil</a>
-    <a href="#contact" class="smooth-transition">Contact</a>
-    <a href="#agenda" class="smooth-transition">Agenda</a>
-    <a href="#resources" class="smooth-transition">Ressources</a>
-    <a href="#signup" class="smooth-transition">Inscription</a>
+    <a href="#home">Accueil</a>
+    <a href="#contact">Contact</a>
+    <a href="#agenda">Agenda</a>
+    <a href="#resources">Ressources</a>
+    <a href="#signup">Inscription</a>
   </nav>
 
   <div class="container" id="home">
     <section class="section">
       <h2>Présentation</h2>
-      <p>Welcome to Evening Networking! Our mission is to connect professionals, spark meaningful collaborations, and inspire growth through impactful networking events.</p>
+      <p>Evening Networking vous offre une plateforme pour développer vos connexions professionnelles et créer des collaborations significatives.</p>
     </section>
 
     <section class="section pictograms">
       <div class="pictogram">
-        <img src="assets/value1.png" alt="Value 1">
-        <p>Expand Your Network</p>
+        <img src="assets/value1.png" alt="Network">
+        <p>Développez votre réseau</p>
       </div>
       <div class="pictogram">
-        <img src="assets/value2.png" alt="Value 2">
-        <p>Gain Valuable Insights</p>
+        <img src="assets/value2.png" alt="Insights">
+        <p>Acquérez des insights précieux</p>
       </div>
       <div class="pictogram">
-        <img src="assets/value3.png" alt="Value 3">
-        <p>Foster Collaborations</p>
+        <img src="assets/value3.png" alt="Collaborations">
+        <p>Faites grandir vos collaborations</p>
       </div>
     </section>
 
@@ -46,11 +164,11 @@
       <h2>Les Co-Fondateurs</h2>
       <div class="pictograms">
         <div class="pictogram">
-          <img src="assets/founder1.jpg" alt="Founder 1">
+          <img src="assets/founder1.jpg" alt="Alex Martin">
           <p>Alex Martin</p>
         </div>
         <div class="pictogram">
-          <img src="assets/founder2.jpg" alt="Founder 2">
+          <img src="assets/founder2.jpg" alt="Sarah Dupont">
           <p>Sarah Dupont</p>
         </div>
       </div>
@@ -58,7 +176,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2024 Evening Networking. All rights reserved.</p>
+    <p>&copy; 2024 Evening Networking. Tous droits réservés.</p>
   </footer>
 
   <script src="script.js"></script>
