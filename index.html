@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation Événement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rejoignez notre événement exclusif !</h1>
+        <p>Réservez votre place dès maintenant.</p>
+    </header>
+    <main>
+        <section id="reservation">
+            <h2>Formulaire de Réservation</h2>
+            <form id="reservation-form" action="https://www.example.com/payment" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">Événement :</label>
+                <select id="event" name="event">
+                    <option value="event1">Événement 1</option>
+                    <option value="event2">Événement 2</option>
+                </select>
+
+                <label for="payment">Montant (en EUR) :</label>
+                <input type="number" id="payment" name="payment" value="20" readonly>
+
+                <button type="submit">Réserver et Payer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Événement. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
