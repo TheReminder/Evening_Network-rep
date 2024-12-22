@@ -1,1 +1,69 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda - Evening Networking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Evening Networking</h1>
+    <p>Boost your connections, elevate your impact</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="contact.html">Contact</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="resources.html">Ressources</a>
+    <a href="signup.html">Inscription</a>
+  </nav>
+
+  <div class="container">
+    <h2>Agenda</h2>
+    <div class="agenda-list">
+      <div class="agenda-item">
+        <h3>Événement Networking #1</h3>
+        <p>Date : 15 janvier 2024</p>
+        <p>Thème : Collaboration et innovation</p>
+        <p>Status : <span style="color: green;">À venir</span></p>
+        <p>Compte à rebours : <span id="countdown1">10 jours</span></p>
+      </div>
+
+      <div class="agenda-item">
+        <h3>Événement Networking #2</h3>
+        <p>Date : 12 décembre 2023</p>
+        <p>Thème : Stratégies de croissance</p>
+        <p>Status : <span style="color: red;">Passé</span></p>
+      </div>
+
+      <div class="agenda-item">
+        <h3>Événement Networking #3</h3>
+        <p>Date : 22 février 2024</p>
+        <p>Thème : Leadership et résilience</p>
+        <p>Status : <span style="color: green;">À venir</span></p>
+        <p>Compte à rebours : <span id="countdown2">60 jours</span></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Evening Networking. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Example countdown logic
+    const countdown1 = document.getElementById('countdown1');
+    const countdown2 = document.getElementById('countdown2');
+
+    function updateCountdown(countdown, daysLeft) {
+      countdown.textContent = `${daysLeft} jours restants`;
+    }
+
+    updateCountdown(countdown1, 10); // Replace with dynamic logic
+    updateCountdown(countdown2, 60);
+  </script>
+</body>
+</html>
