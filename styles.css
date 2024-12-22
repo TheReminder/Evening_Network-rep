@@ -1,84 +1,92 @@
 body {
-  font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
   color: #333;
 }
-
 header {
-  text-align: center;
-  padding: 20px;
-  background: #4a90e2;
+  background: linear-gradient(90deg, #4a90e2, #6bb0f5);
   color: white;
+  text-align: center;
+  padding: 50px 20px;
 }
-
 header h1 {
-  margin: 0;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
-
 nav {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 10px;
-  background: #ffffff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  background: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
 nav a {
   text-decoration: none;
-  color: #4a90e2;
+  margin: 0 15px;
   font-weight: bold;
+  color: #4a90e2;
   padding: 5px 10px;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  transition: background 0.3s, color 0.3s;
 }
-
 nav a:hover {
-  background-color: #4a90e2;
-  color: white;
-}
-
-.container {
-  padding: 20px;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.section h2 {
-  margin-bottom: 20px;
-  color: #4a90e2;
-}
-
-.pictograms {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-}
-
-.pictogram {
-  text-align: center;
-}
-
-.pictogram img {
-  width: 80px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
   background: #4a90e2;
   color: white;
 }
-
-.smooth-transition {
-  transition: all 0.3s ease-in-out;
+.container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-
-.smooth-transition:hover {
-  transform: scale(1.05);
+.section {
+  margin-bottom: 50px;
+}
+.section h2 {
+  font-size: 2em;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+.pictograms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.pictogram {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.pictogram:hover {
+  transform: translateY(-5px);
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4a90e2;
+  color: white;
+  margin-top: 50px;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.cta-buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background: #4a90e2;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.cta-buttons a:hover {
+  background: #357ab8;
 }
